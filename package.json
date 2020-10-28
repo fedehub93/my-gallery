@@ -1,7 +1,7 @@
 {
-  "name": "recipe-page-master",
+  "name": "my-gallery-master",
   "version": "1.0.0",
-  "description": "Recipe page challenge",
+  "description": "My gallery challenge",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fedehub93/recipe-page.git"
+    "url": "git+https://github.com/fedehub93/my-gallery.git"
   },
   "author": "Federico Verrengia",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fedehub93/recipe-page/issues"
+    "url": "https://github.com/fedehub93/my-gallery/issues"
   },
-  "homepage": "https://github.com/fedehub93/recipe-page#readme",
+  "homepage": "https://github.com/fedehub93/my-gallery#readme",
   "devDependencies": {
     "autoprefixer": "^9.8.6",
     "node-sass": "^4.14.1",
