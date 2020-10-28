@@ -18,9 +18,10 @@ html {
 
 .wrapper {
   max-width: 120rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 2.5rem; }
 
-.heading-1, .heading-2, .profile__stats-value, .profile__stats-description {
+.heading-1, .heading-2, .profile__stats-value, .profile__stats-description, .footer {
   font-family: "Montserrat", sans-serif;
   font-weight: 600; }
 
@@ -33,10 +34,13 @@ html {
   color: var(--color-gray-2); }
 
 .u-mb-xsmall {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem !important; }
 
 .u-mb-small {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem !important; }
+
+.u-mb-medium {
+  margin-bottom: 4rem !important; }
 
 .profile {
   padding: 1.5rem;
@@ -97,3 +101,8 @@ html {
     height: 100%;
     object-fit: cover;
     display: block; }
+
+.footer {
+  padding: 4rem 0;
+  text-align: center;
+  color: var(--color-gray-2); }
