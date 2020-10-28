@@ -1,0 +1,16 @@
+%montserrat-600 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.heading-1 {
+    @extend %montserrat-600;
+    font-size: 2.4rem;
+    color: var(--color-black);
+}
+
+.heading-2 {
+    @extend %montserrat-600;
+    font-size: 1.4rem;
+    color: var(--color-gray-2);
+}
