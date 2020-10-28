@@ -18,10 +18,18 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+
+    @media only screen and (max-width: $media-screen-small) {
+        font-size: 56.25%;
+    }
 }
 
 .wrapper {
     max-width: 120rem;
     margin: 0 auto;
     padding: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

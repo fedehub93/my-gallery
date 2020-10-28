@@ -1,8 +1,5 @@
 .profile {
-    padding: 1.5rem;
-    width: 50%;
-    margin: 0 auto;
-
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,6 +11,7 @@
     }
 
     &__stats {
+        max-width: 100%;
         display: flex;
 
         &-box {
@@ -22,7 +20,6 @@
             }
             height: 7rem;
             width: 12rem;
-            padding: 2.5rem 4rem;
             background-color: var(--color-gray-1);
             border-radius: 2rem;
             color: var(--color-black);
@@ -30,7 +27,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: center;    
         }
 
         &-value {
@@ -50,10 +47,18 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 2rem;
+    
+    @media only screen and (max-width: $media-screen-small) {
+        gap: 1rem;
+    }
 
     &__box {
         border-radius: 3rem;
         overflow: hidden;
+        
+        @media only screen and (max-width: $media-screen-small) {
+            border-radius: 1.5rem;
+        }
 
         &--2 {
             grid-column: 2 / -1;

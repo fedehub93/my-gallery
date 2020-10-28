@@ -15,11 +15,17 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
+  @media only screen and (max-width: 31.25em) {
+    html {
+      font-size: 56.25%; } }
 
 .wrapper {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 2.5rem; }
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .heading-1, .heading-2, .profile__stats-value, .profile__stats-description, .footer {
   font-family: "Montserrat", sans-serif;
@@ -43,9 +49,7 @@ html {
   margin-bottom: 4rem !important; }
 
 .profile {
-  padding: 1.5rem;
-  width: 50%;
-  margin: 0 auto;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -54,11 +58,11 @@ html {
     height: 10rem;
     border-radius: 4rem; }
   .profile__stats {
+    max-width: 100%;
     display: flex; }
     .profile__stats-box {
       height: 7rem;
       width: 12rem;
-      padding: 2.5rem 4rem;
       background-color: var(--color-gray-1);
       border-radius: 2rem;
       color: var(--color-black);
@@ -78,9 +82,15 @@ html {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 2rem; }
+  @media only screen and (max-width: 31.25em) {
+    .gallery {
+      gap: 1rem; } }
   .gallery__box {
     border-radius: 3rem;
     overflow: hidden; }
+    @media only screen and (max-width: 31.25em) {
+      .gallery__box {
+        border-radius: 1.5rem; } }
     .gallery__box--2 {
       grid-column: 2 / -1;
       grid-row: 1 / 2; }
