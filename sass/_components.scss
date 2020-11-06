@@ -55,6 +55,7 @@
     &__box {
         border-radius: 3rem;
         overflow: hidden;
+        box-shadow: 0 1rem 2rem rgba(0,0,0, 0.2);
         
         @media only screen and (max-width: $media-screen-small) {
             border-radius: 1.5rem;
